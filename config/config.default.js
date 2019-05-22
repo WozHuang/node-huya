@@ -23,6 +23,12 @@ module.exports = appInfo => {
     // myAppName: 'egg',
   };
 
+  config.huya = {
+    // 在此填写虎牙得到的id，用于签名鉴权
+    openId: 'xxxxx',
+    secretId: 'xxxxx',
+  };
+
   return {
     ...config,
     ...userConfig,
