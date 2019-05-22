@@ -22,7 +22,7 @@ module.exports = {
   /**
    * 把 HuYa 返回的分页信息构造成page对象
    * @param data
-   * @returns {{pageNo: *, totalPage: *, pageSize: *, time: *, totalCount: *}}
+   * @return {{pageNo: *, totalPage: *, pageSize: *, time: *, totalCount: *}}
    */
   returnPage(data) {
     const { page: pageNo, pageSize, totalPage, totalCount, time } = data;
