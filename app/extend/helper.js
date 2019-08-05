@@ -10,7 +10,7 @@ module.exports = {
 
   /**
    * 从请求中获取pageNo和pageSize
-   * @return {{pageNo: (*|number), pageSize: (*|number)}}
+   * @return {{pageNo: (*|number), pageSize: (*|number)}} 构造后的page对象
    */
   getPage() {
     return {
@@ -21,8 +21,8 @@ module.exports = {
 
   /**
    * 把 HuYa 返回的分页信息构造成page对象
-   * @param data
-   * @return {{pageNo: *, totalPage: *, pageSize: *, time: *, totalCount: *}}
+   * @param {object} data 接口返回的分页信息
+   * @return {{pageNo: *, totalPage: *, pageSize: *, time: *, totalCount: *}} page 对象
    */
   returnPage(data) {
     const { page: pageNo, pageSize, totalPage, totalCount, time } = data;
